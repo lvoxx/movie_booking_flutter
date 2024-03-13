@@ -1,0 +1,83 @@
+name: movie_booking
+description: "Mobie Booking Ticket App"
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  bloc: ^8.1.3
+  cached_network_image: ^3.3.1
+  chewie: ^1.7.5
+  cupertino_icons: ^1.0.2
+  dartz: ^0.10.1
+  dio: ^5.4.1
+  equatable: ^2.0.5
+  flutter_bloc: ^8.1.4
+  flutter_easyloading: ^3.0.5
+  get_it: ^7.6.7
+  iconly: ^1.0.1
+  icons_plus: ^5.0.0
+  internet_connection_checker: ^1.0.0+1
+  intl: ^0.19.0
+  lottie: ^3.1.0
+  oktoast: ^3.4.0
+  shared_preferences: ^2.2.2
+  smooth_page_indicator: ^1.1.0
+  url_launcher: ^6.2.5
+  video_thumbnail: ^0.5.3
+  flutter_screenutil: ^5.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  very_good_analysis: ^5.1.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Merriweather
+      fonts:
+        - asset: assets/fonts/merriweather/Merriweather-Light.ttf
+          weight: 300
+        - asset: assets/fonts/merriweather/Merriweather-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/merriweather/Merriweather-Italic.ttf
+          weight: 400
+        - asset: assets/fonts/merriweather/Merriweather-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/merriweather/Merriweather-Black.ttf
+          weight: 900
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/mulish/Merriweather-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/mulish/Merriweather-ExtraLightItalic.ttf
+          weight: 200
+        - asset: assets/fonts/mulish/Merriweather-Light.ttf
+          weight: 300
+        - asset: assets/fonts/mulish/Merriweather-LightItalic.ttf
+          weight: 300
+        - asset: assets/fonts/mulish/Merriweather-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/mulish/Merriweather-Italic.ttf
+          weight: 400
+        - asset: assets/fonts/mulish/Merriweather-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/mulish/Merriweather-MediumItalic.ttf
+          weight: 500
+        - asset: assets/fonts/mulish/Merriweather-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/mulish/Merriweather-BoldItalic.ttf
+          weight: 700
+        - asset: assets/fonts/mulish/Merriweather-Black.ttf
+          weight: 900
+        - asset: assets/fonts/mulish/Merriweather-BlackItalic.ttf
+          weight: 900
