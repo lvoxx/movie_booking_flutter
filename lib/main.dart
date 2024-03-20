@@ -1,23 +1,17 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:movie_booking/core/theme/app_theme.dart';
+import 'package:logger/logger.dart';
+import 'package:movie_booking/app/app_init.dart' as app_init;
+import 'package:movie_booking/app/urban_app.dart';
+import 'package:movie_booking/core/service/service_locator.dart' as di;
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      themeMode: ThemeMode.system,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
+  runZonedGuarded(() async {
+    await app_init.initHiveBox();
+    await app_init.appInit();
+    runApp(const UrbanApp());
+  }, (e, st) {
+    di.sl.get<Logger>().f('Init App Failed', error: e, stackTrace: st);
+  });
 }

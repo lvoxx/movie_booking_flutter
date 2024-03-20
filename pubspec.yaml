@@ -10,33 +10,43 @@ dependencies:
   flutter:
     sdk: flutter
 
+  animated_bottom_navigation_bar: ^1.3.3
   bloc: ^8.1.3
-  cached_network_image: ^3.3.1
-  chewie: ^1.7.5
   cupertino_icons: ^1.0.2
   dartz: ^0.10.1
   dio: ^5.4.1
   equatable: ^2.0.5
   flutter_bloc: ^8.1.4
   flutter_easyloading: ^3.0.5
+  flutter_native_splash: ^2.4.0
+  flutter_screenutil: ^5.9.0
+  freezed_annotation: ^2.4.1
   get_it: ^7.6.7
+  go_router: ^13.2.0
+  hive_flutter: ^1.1.0
+  hive: ^2.2.3
   iconly: ^1.0.1
   icons_plus: ^5.0.0
   internet_connection_checker: ^1.0.0+1
   intl: ^0.19.0
+  json_annotation: ^4.8.1
   lottie: ^3.1.0
   oktoast: ^3.4.0
-  shared_preferences: ^2.2.2
+  path_provider: ^2.1.2
   smooth_page_indicator: ^1.1.0
   url_launcher: ^6.2.5
-  video_thumbnail: ^0.5.3
-  flutter_screenutil: ^5.9.0
+  logger: ^2.1.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  build_runner: ^2.4.8
   flutter_lints: ^2.0.0
+  freezed: ^2.4.7
+  hive_generator: ^2.0.1
+  json_serializable: ^6.7.1
+  retrofit_generator: ^8.1.0
   very_good_analysis: ^5.1.0
 
 flutter:
@@ -54,30 +64,4 @@ flutter:
         - asset: assets/fonts/merriweather/Merriweather-Bold.ttf
           weight: 700
         - asset: assets/fonts/merriweather/Merriweather-Black.ttf
-          weight: 900
-    - family: Mulish
-      fonts:
-        - asset: assets/fonts/mulish/Merriweather-ExtraLight.ttf
-          weight: 200
-        - asset: assets/fonts/mulish/Merriweather-ExtraLightItalic.ttf
-          weight: 200
-        - asset: assets/fonts/mulish/Merriweather-Light.ttf
-          weight: 300
-        - asset: assets/fonts/mulish/Merriweather-LightItalic.ttf
-          weight: 300
-        - asset: assets/fonts/mulish/Merriweather-Regular.ttf
-          weight: 400
-        - asset: assets/fonts/mulish/Merriweather-Italic.ttf
-          weight: 400
-        - asset: assets/fonts/mulish/Merriweather-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/mulish/Merriweather-MediumItalic.ttf
-          weight: 500
-        - asset: assets/fonts/mulish/Merriweather-Bold.ttf
-          weight: 700
-        - asset: assets/fonts/mulish/Merriweather-BoldItalic.ttf
-          weight: 700
-        - asset: assets/fonts/mulish/Merriweather-Black.ttf
-          weight: 900
-        - asset: assets/fonts/mulish/Merriweather-BlackItalic.ttf
           weight: 900
